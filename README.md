@@ -49,10 +49,9 @@ Pre-requistes:
 To build the USD SDK:
 * Start the VC++2017 command-line from your start-menu: "\x64 Native Tools Command Prompt for VS 2017"
 * cd C:\dev
-* git clone https://github.com/PixarAnimationStudios/USD.git USD-tmp
-* USD-tmp\build_scripts\build_usd.py C:\dev\USD
+* git clone https://github.com/PixarAnimationStudios/USD.git
+* USD\build_scripts\build_usd.py C:\dev\build-output
 
 The build took an hour, on my somewhat powerful workstation.
-The build cloned once more, the USD repository, so it should be safe to delete the USD-tmp folder.
 Once the build completes, it should instruct you to add two folders to the PATH environment variable and one folder to the PYTHONPATH environment variable.
 

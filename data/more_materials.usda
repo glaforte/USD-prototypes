@@ -4,21 +4,53 @@ def "Looks"
 {
     def Material "Red"
     {
-        color3f displayColor = (1.0, 0.0, 0.0)
+        token outputs:surface.connect = </Looks/Red/previewShader.outputs:surface>
+        def Shader "previewShader"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (1, 0, 0)
+            float inputs:metallic = 0
+            float inputs:roughness = 0.4
+            token outputs:surface
+        }
     }
 
     def Material "Green"
     {
-        color3f displayColor = (0.0, 1.0, 0.0)
+        token outputs:surface.connect = </Looks/Green/previewShader.outputs:surface>
+        def Shader "previewShader"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (0, 1, 0)
+            float inputs:metallic = 0
+            float inputs:roughness = 0.4
+            token outputs:surface
+        }
     }
 
     def Material "Blue"
     {
-        color3f displayColor = (0.0, 0.0, 1.0)
+        token outputs:surface.connect = </Looks/Blue/previewShader.outputs:surface>
+        def Shader "previewShader"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (0, 0, 1)
+            float inputs:metallic = 0
+            float inputs:roughness = 0.4
+            token outputs:surface
+        }
     }
 
     def Material "Yellow"
     {
-        color3f displayColor = (1.0, 1.0, 0.0)
+        token outputs:surface.connect = </Looks/Yellow/previewShader.outputs:surface>
+        def Shader "previewShader"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (1, 1, 0)
+            float inputs:metallic = 0
+            float inputs:roughness = 0.4
+            token outputs:surface
+        }
     }
 }
