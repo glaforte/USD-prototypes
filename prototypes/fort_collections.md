@@ -20,7 +20,7 @@ It really feels like the collections are only useful when binding at the root of
 
 ### Version 2
 
-![GitHub Logo](/images/logo.png)
+![](./fort_collections.png)
 
 This second version is setting up the collection bindings at the root-level.
 The root prim also includes the declaration of the collections.
